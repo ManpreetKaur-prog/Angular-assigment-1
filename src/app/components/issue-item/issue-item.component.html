@@ -1,0 +1,7 @@
+<div [ngClass]="{resolved: issue.resolved}"  
+class="issue"
+(dblclick)="markItAsRead(issue)">
+    <h3>{{issue.title}}
+    <fa-icon  (click)="onDelete(issue)" [ngStyle]="{'color': 'red'}" [icon]=faTimes></fa-icon></h3>
+    <h3>{{issue.description}}</h3>
+</div>

@@ -1,0 +1,22 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="title">
+                Issue
+        </label>
+        <input type="text" name="title" id="title" [(ngModel)]="title" placeholder="Add Issue">
+    </div>
+    <div class="form-control">
+        <label for="decription">
+                Description
+        </label>
+        <input type="text" name="decription" id="decription" [(ngModel)]="description" placeholder="Add Day">
+    </div>
+    <div class="form-control form-control-check">
+        <label for="reminder">
+                Resolved?
+        </label>
+        <input type="checkbox" name="resolved" [(ngModel)]="resolved" id="resolved">
+    </div>
+        <input type="submit" value="Submit" class="btn btn-block" >
+    
+</form>

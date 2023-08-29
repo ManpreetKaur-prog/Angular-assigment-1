@@ -1,0 +1,8 @@
+<app-add-issue (onAddIssue)="onAddIssue($event)"></app-add-issue>
+<app-issue-item 
+*ngFor="let issue of issues" 
+[issue]="issue" 
+(onDeleteIssue)="deleteIssue(issue)"
+(OnmarkItAsRead)="onMarkItAsRead(issue)">
+
+</app-issue-item>
